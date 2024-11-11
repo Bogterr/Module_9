@@ -7,6 +7,7 @@ def all_variants(text):
     for run in range(len_txt):
         for stop in range(run + 1, len_txt + 1):
             list.append(text[run:stop])
+            # yield text[run:stop]
 
     qsort(list)
     return list
